@@ -125,7 +125,7 @@
 }
 
 .heading.h2.contact.email {
-  font-size: 160%;
+  font-size: 150%;
   text-transform: lowercase;
 }
 
@@ -322,7 +322,15 @@
 
 .div-block-2 {
   overflow: hidden;
+  width: 450px;
+  height: 325px;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 5px;
+  background-image: url('../images/The-Quadrant-Serviced-Offices-Coventry-Outside-min.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
@@ -372,6 +380,7 @@
 }
 
 .image-2 {
+  max-width: none;
   border-radius: 5px;
 }
 
@@ -380,10 +389,10 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 506px;
-  height: 376px;
-  max-height: 376px;
-  max-width: 506px;
+  width: 450px;
+  height: 325px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -520,4 +529,91 @@
 .column-2 {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-link {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .column {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .brand.w--current {
+    width: 350px;
+  }
+
+  .heading.h3 {
+    text-align: center;
+  }
+
+  .heading.h3.service-title {
+    text-align: left;
+  }
+
+  .container.grid-container {
+    max-width: 90%;
+  }
+
+  .features-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .brand.w--current {
+    width: 220px;
+    padding-top: 16px;
+  }
+
+  .heading.h2.contact {
+    font-size: 100%;
+  }
+
+  .heading.h2.contact.email {
+    font-size: 90%;
+  }
+
+  .heading.h3.service-title {
+    text-align: center;
+  }
+
+  .button-ghost {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .grid-2 {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .service-price {
+    text-align: center;
+  }
+
+  .div-block-2 {
+    width: 100%;
+  }
+
+  .div-block-5 {
+    width: 100%;
+    padding: 6px;
+  }
+
+  .contact-icon-container {
+    width: 30px;
+  }
+
+  .div-block-8 {
+    margin-bottom: 20px;
+  }
+
+  .div-block-9 {
+    text-align: center;
+  }
 }
