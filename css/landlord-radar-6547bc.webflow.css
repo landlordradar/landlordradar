@@ -756,6 +756,12 @@
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
+    background-color: #008d36;
+    color: #fff;
+  }
+
+  .button-ghost:hover {
+    background-color: #006b29;
   }
 
   .features-section {
