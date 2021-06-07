@@ -161,8 +161,13 @@
   background-color: #006b29;
 }
 
+.button-full.hero-full-btn {
+  position: static;
+  margin-right: 20px;
+}
+
 .button-ghost {
-  position: relative;
+  position: static;
   left: 160px;
   top: -41px;
   padding: 10px 30px;
@@ -397,7 +402,7 @@
   height: 325px;
   margin-right: auto;
   margin-left: auto;
-  padding: 40px;
+  padding: 20px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -536,6 +541,50 @@
 }
 
 @media screen and (max-width: 991px) {
+  .hero-container {
+    position: relative;
+  }
+
+  .heading {
+    font-size: 29px;
+  }
+
+  .heading.hero-heading {
+    position: absolute;
+    top: 126.438px;
+    line-height: 37px;
+  }
+
+  .button-full.hero-full-btn {
+    position: static;
+    top: 241.438px;
+    margin-right: 20px;
+  }
+
+  .button-ghost {
+    position: static;
+  }
+
+  .features-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .video-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .service-list-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .contact-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .footer-link {
     display: inline-block;
     margin-bottom: 10px;
@@ -544,9 +593,18 @@
   .column {
     margin-bottom: 20px;
   }
+
+  .div-block-12 {
+    position: relative;
+    top: -31px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .hero-section {
+    height: 60vh;
+  }
+
   .brand.w--current {
     width: 350px;
   }
@@ -559,6 +617,25 @@
     text-align: left;
   }
 
+  .heading.hero-heading {
+    top: 104.438px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .button-full.hero-full-btn {
+    top: 214.438px;
+  }
+
+  .button-ghost {
+    top: -25px;
+  }
+
+  .features-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   .container.grid-container {
     max-width: 90%;
   }
@@ -567,15 +644,46 @@
     text-align: center;
   }
 
+  .video-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .service-list-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .contact-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .div-block-8 {
+    text-align: center;
+  }
+
   .div-block-9 {
     text-align: center;
+  }
+
+  .div-block-12 {
+    top: -30px;
   }
 }
 
 @media screen and (max-width: 479px) {
+  .hero-section {
+    height: 60vh;
+  }
+
   .brand.w--current {
-    width: 220px;
+    width: 200px;
     padding-top: 16px;
+  }
+
+  .hero-container {
+    text-align: center;
   }
 
   .heading.h2.contact {
@@ -590,9 +698,39 @@
     text-align: center;
   }
 
+  .heading.hero-heading {
+    top: 75.438px;
+  }
+
+  .button-full.hero-full-btn {
+    position: static;
+    left: 87px;
+    top: 177.438px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
   .button-ghost {
     position: static;
-    margin-top: 20px;
+    left: 1px;
+    top: -13px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .features-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .paragraph.long-copy {
+    text-align: center;
+  }
+
+  .paragraph.features-p {
+    text-align: center;
   }
 
   .grid-2 {
@@ -604,8 +742,20 @@
     text-align: center;
   }
 
+  .service-desc {
+    text-align: center;
+  }
+
   .div-block-2 {
     width: 100%;
+  }
+
+  .estimate-text.top {
+    text-align: center;
+  }
+
+  .div-block-4 {
+    margin-right: 1px;
   }
 
   .div-block-5 {
@@ -630,5 +780,29 @@
 
   .div-block-9 {
     text-align: center;
+  }
+
+  .menu-button {
+    margin-top: -3px;
+  }
+
+  .div-block-12 {
+    top: -26px;
+    bottom: -26px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
