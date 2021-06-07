@@ -549,6 +549,18 @@
     font-size: 29px;
   }
 
+  .heading.h2 {
+    font-size: 130%;
+  }
+
+  .heading.h3 {
+    font-size: 100%;
+  }
+
+  .heading.h3.service-title {
+    line-height: 27px;
+  }
+
   .heading.hero-heading {
     position: absolute;
     top: 126.438px;
@@ -595,8 +607,8 @@
   }
 
   .div-block-12 {
-    position: relative;
-    top: -31px;
+    position: absolute;
+    top: 247px;
   }
 }
 
@@ -609,11 +621,17 @@
     width: 350px;
   }
 
+  .heading.h2 {
+    font-size: 110%;
+  }
+
   .heading.h3 {
+    line-height: 27px;
     text-align: center;
   }
 
   .heading.h3.service-title {
+    font-size: 100%;
     text-align: left;
   }
 
@@ -668,7 +686,7 @@
   }
 
   .div-block-12 {
-    top: -30px;
+    top: 203px;
   }
 }
 
@@ -686,6 +704,11 @@
     text-align: center;
   }
 
+  .heading.h2 {
+    font-size: 110%;
+    line-height: 29px;
+  }
+
   .heading.h2.contact {
     font-size: 100%;
   }
@@ -694,7 +717,12 @@
     font-size: 90%;
   }
 
+  .heading.h3 {
+    font-size: 100%;
+  }
+
   .heading.h3.service-title {
+    line-height: 27px;
     text-align: center;
   }
 
@@ -754,6 +782,10 @@
     text-align: center;
   }
 
+  .estimate-text.end {
+    text-align: center;
+  }
+
   .div-block-4 {
     margin-right: 1px;
   }
@@ -787,8 +819,9 @@
   }
 
   .div-block-12 {
-    top: -26px;
-    bottom: -26px;
+    position: absolute;
+    left: 73px;
+    top: 183px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
