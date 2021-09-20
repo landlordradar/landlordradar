@@ -35,6 +35,13 @@
 </head>
 
 <body class="body">
+
+  <script type="text/javascript">
+    $('#$addToCartButton').click(function() {
+      fbq('track', 'InitiateCheckout');
+    });
+  </script>
+
   <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
     <div class="nav-container w-container">
       <a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/Landlord-Radar-Logo2-1024x123.png" loading="eager" sizes="(max-width: 479px) 190px, (max-width: 767px) 340px, 450px" srcset="images/Landlord-Radar-Logo2-1024x123-p-500.png 500w, images/Landlord-Radar-Logo2-1024x123-p-800.png 800w, images/Landlord-Radar-Logo2-1024x123.png 1024w" alt=""></a>
@@ -42,7 +49,7 @@
         <a href="#features" class="nav-link w-nav-link">how it works</a>
         <a href="#services" class="nav-link w-nav-link">services</a>
         <a href="#contact" class="nav-link w-nav-link">Contact</a>
-        <a href="https://letzbefriends.com/ords/f?p=102:181:::::P181_AGENT:6377480" class="nav-link w-nav-link">sign up</a>
+        <a href="https://letzbefriends.com/ords/f?p=102:181:::::P181_AGENT:6377480" class="nav-link w-nav-link" id="btn-top-sign-up">sign up</a>
       </nav>
       <div class="menu-button w-nav-button">
         <div class="w-icon-nav-menu"></div>
