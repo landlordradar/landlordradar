@@ -1,121 +1,277 @@
-<!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Mon Jun 07 2021 15:03:22 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="60b6339e628ab59f015a18d9" data-wf-site="60b6339e628ab5296f5a18d8">
-<head>
-  <meta charset="utf-8">
-  <title>Landlord Radar</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/landlord-radar-6547bc.webflow.css" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]  }});</script>
-  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.png" rel="apple-touch-icon">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '884471969110365');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=884471969110365&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
-</head>
+<html
+  data-wf-page="60b6339e628ab59f015a18d9"
+  data-wf-site="60b6339e628ab5296f5a18d8"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Landlord Radar</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/webflow.css" rel="stylesheet" type="text/css" />
+    <link
+      href="css/landlord-radar-6547bc.webflow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic",
+          ],
+        },
+      });
+    </script>
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "884471969110365");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=884471969110365&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
 
-<body class="body">
+  <body class="body">
+    <div
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      role="banner"
+      class="navbar w-nav"
+    >
+      <div class="nav-container w-container">
+        <a
+          href="index.html"
+          aria-current="page"
+          class="brand w-nav-brand w--current"
+          ><img
+            src="images/Landlord-Radar-Logo2-1024x123.png"
+            loading="eager"
+            sizes="(max-width: 479px) 190px, (max-width: 767px) 340px, 450px"
+            srcset="
+              images/Landlord-Radar-Logo2-1024x123-p-500.png  500w,
+              images/Landlord-Radar-Logo2-1024x123-p-800.png  800w,
+              images/Landlord-Radar-Logo2-1024x123.png       1024w
+            "
+            alt=""
+        /></a>
+        <nav role="navigation" class="w-nav-menu">
+          <a href="#features" class="nav-link w-nav-link">how it works</a>
+          <a href="#services" class="nav-link w-nav-link">services</a>
+          <a href="#contact" class="nav-link w-nav-link">Contact</a>
+          <a
+            href="https://letzbefriends.com/ords/f?p=102:181:::::P181_AGENT:6377480"
+            class="nav-link w-nav-link"
+            id="btn-top-sign-up"
+            >sign up</a
+          >
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
 
-  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
-    <div class="nav-container w-container">
-      <a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/Landlord-Radar-Logo2-1024x123.png" loading="eager" sizes="(max-width: 479px) 190px, (max-width: 767px) 340px, 450px" srcset="images/Landlord-Radar-Logo2-1024x123-p-500.png 500w, images/Landlord-Radar-Logo2-1024x123-p-800.png 800w, images/Landlord-Radar-Logo2-1024x123.png 1024w" alt=""></a>
-      <nav role="navigation" class="w-nav-menu">
-        <a href="#features" class="nav-link w-nav-link">how it works</a>
-        <a href="#services" class="nav-link w-nav-link">services</a>
-        <a href="#contact" class="nav-link w-nav-link">Contact</a>
-        <a href="https://letzbefriends.com/ords/f?p=102:181:::::P181_AGENT:6377480" class="nav-link w-nav-link" id="btn-top-sign-up">sign up</a>
-      </nav>
-      <div class="menu-button w-nav-button">
-        <div class="w-icon-nav-menu"></div>
-      </div>
-    </div>
-  </div>
-
-  <div id="home" class="hero-section">
-    <div class="hero-container w-container">
-      <h1 id="hero-heading" class="heading hero-heading">goodbye fixed management fees.<br>hello pay-as-you-go.</h1>
-      <div class="div-block-12">
-        <a href="https://letzbefriends.com/ords/f?p=102:181:::::P181_AGENT:6377480" class="button-full hero-full-btn w-button" id="btn-5-free-1">Get 5 Free Property Adverts</a>
-        <a href="#features" class="button-ghost w-button">Show me more</a>
-      </div>
-    </div>
-  </div>
-  <div id="features" class="features-section">
-    <div class="container w-container">
-      <h2 class="heading h2">pay-as-you-go property management<br></h2>
-      <div class="div-block"></div>
-      <p class="paragraph long-copy">We offer you a unique set of pay as you go services that gives you the full managed experience at  revolutionary low prices. All our work is itemised separately and invoiced so that you only pay for what you use. It can’t get any cheaper than this to operate an HMO and stay fully compliant.<br><br>Look forward to a full tenancy cycle where we do everything for you. Look for the ‘estimates’ (coloured) in our list of services to see how we can give you the full managed experience for an incredible estimated price of £720 yearly per property.<br></p>
-      <div class="w-row">
-        <div class="w-col w-col-3">
-          <div class="features-container">
-            <div class="features-icon-container"><img src="images/user.svg" loading="eager" alt="" class="image"></div>
-            <h3 class="heading h3">online<br>tenant sign up</h3>
-            <p class="paragraph features-p">It’s easy to sign up new tenants from the comfort of your own home because the sign-up process is fully online.</p>
-          </div>
-        </div>
-        <div class="w-col w-col-3">
-          <div class="features-container">
-            <div class="features-icon-container"><img src="images/home.svg" loading="eager" alt="" class="image"></div>
-            <h3 class="heading h3">property<br>marketing</h3>
-            <p class="paragraph features-p">Publish once, list everywhere! One-click listings to, Zoopla, Spareroom, Letzbefriends, and more!</p>
-          </div>
-        </div>
-        <div class="w-col w-col-3">
-          <div class="features-container">
-            <div class="features-icon-container"><img src="images/hammer.svg" loading="eager" alt="" class="image"></div>
-            <h3 class="heading h3">maintenance management</h3>
-            <p class="paragraph features-p">Manage maintenance requests on our collaborative software platform, or we can manage them for you at our low admin rates.</p>
-          </div>
-        </div>
-        <div class="w-col w-col-3">
-          <div class="features-container">
-            <div class="features-icon-container"><img src="images/chat-bubble.svg" loading="eager" alt="" class="image"></div>
-            <h3 class="heading h3">Sales &amp; enquiry management</h3>
-            <p class="paragraph features-p">Manage sales leads and respond to enquiries from the CRM. Use our business messaging platform to stay in touch with tenants, tradesmen and others!</p>
-          </div>
+    <div id="home" class="hero-section">
+      <div class="hero-container w-container">
+        <h1 id="hero-heading" class="heading hero-heading">
+          goodbye fixed management fees.<br />hello pay-as-you-go.
+        </h1>
+        <div class="div-block-12">
+          <a
+            href="https://letzbefriends.com/ords/f?p=102:181:::::P181_AGENT:6377480"
+            class="button-full hero-full-btn w-button"
+            id="btn-5-free-1"
+            >Get 5 Free Property Adverts</a
+          >
+          <a href="#features" class="button-ghost w-button">Show me more</a>
         </div>
       </div>
     </div>
-  </div>
-  <div id="video" class="video-section">
-    <div class="container video w-container">
-      <h2 class="heading h2">join the movement<br></h2>
-      <div class="div-block"></div>
-      <div class="html-embed w-embed w-iframe"><iframe width="100%" height="315" src="https://www.youtube.com/embed/EbIap39DyNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-      <a href="https://letzbefriends.com/ords/f?p=102:181:::::P181_AGENT:6377480" class="button-full video w-button" id="btn-5-free-2">Get 5 Free Property Adverts</a>
-    </div>
-  </div>
-  <div id="services" class="service-list-section">
-    <div class="container grid-container w-container">
-      <h2 class="heading h2">service list<br></h2>
-      <div class="div-block"></div>
-      <div class="service-estimate-text-container w-clearfix">
-        <div class="div-block-4"><img src="images/info.svg" loading="lazy" alt=""></div>
-        <div class="estimate-text top">View each service&#x27;s &quot;<span class="estimate-text-blue">Estimate</span>&quot; to get an idea of the typical cost for a 5 bedroom property over the course of a year, and then compare that to the cost of a traditional letting agency at the end of this service list!</div>
+    <div id="features" class="features-section">
+      <div class="container w-container">
+        <h2 class="heading h2">pay-as-you-go property management<br /></h2>
+        <div class="div-block"></div>
+        <p class="paragraph long-copy">
+          We offer you a unique set of pay as you go services that gives you the
+          full managed experience at  revolutionary low prices. All our work is
+          itemised separately and invoiced so that you only pay for what you
+          use. It can’t get any cheaper than this to operate an HMO and stay
+          fully compliant.<br /><br />Look forward to a full tenancy cycle where
+          we do everything for you. Look for the ‘estimates’ (coloured) in our
+          list of services to see how we can give you the full managed
+          experience for an incredible estimated price of £720 yearly per
+          property.<br />
+        </p>
+        <div class="w-row">
+          <div class="w-col w-col-3">
+            <div class="features-container">
+              <div class="features-icon-container">
+                <img
+                  src="images/user.svg"
+                  loading="eager"
+                  alt=""
+                  class="image"
+                />
+              </div>
+              <h3 class="heading h3">online<br />tenant sign up</h3>
+              <p class="paragraph features-p">
+                It’s easy to sign up new tenants from the comfort of your own
+                home because the sign-up process is fully online.
+              </p>
+            </div>
+          </div>
+          <div class="w-col w-col-3">
+            <div class="features-container">
+              <div class="features-icon-container">
+                <img
+                  src="images/home.svg"
+                  loading="eager"
+                  alt=""
+                  class="image"
+                />
+              </div>
+              <h3 class="heading h3">property<br />marketing</h3>
+              <p class="paragraph features-p">
+                Publish once, list everywhere! One-click listings to, Zoopla,
+                Spareroom, Letzbefriends, and more!
+              </p>
+            </div>
+          </div>
+          <div class="w-col w-col-3">
+            <div class="features-container">
+              <div class="features-icon-container">
+                <img
+                  src="images/hammer.svg"
+                  loading="eager"
+                  alt=""
+                  class="image"
+                />
+              </div>
+              <h3 class="heading h3">maintenance management</h3>
+              <p class="paragraph features-p">
+                Manage maintenance requests on our collaborative software
+                platform, or we can manage them for you at our low admin rates.
+              </p>
+            </div>
+          </div>
+          <div class="w-col w-col-3">
+            <div class="features-container">
+              <div class="features-icon-container">
+                <img
+                  src="images/chat-bubble.svg"
+                  loading="eager"
+                  alt=""
+                  class="image"
+                />
+              </div>
+              <h3 class="heading h3">Sales &amp; enquiry management</h3>
+              <p class="paragraph features-p">
+                Manage sales leads and respond to enquiries from the CRM. Use
+                our business messaging platform to stay in touch with tenants,
+                tradesmen and others!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="w-layout-grid grid-2">
-        <div class="service-box">
+    </div>
+    <div id="video" class="video-section">
+      <div class="container video w-container">
+        <h2 class="heading h2">join the movement<br /></h2>
+        <div class="div-block"></div>
+        <div class="html-embed w-embed w-iframe">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/EbIap39DyNY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+        <a
+          href="https://letzbefriends.com/ords/f?p=102:181:::::P181_AGENT:6377480"
+          class="button-full video w-button"
+          id="btn-5-free-2"
+          >Get 5 Free Property Adverts</a
+        >
+      </div>
+    </div>
+    <div id="services" class="service-list-section">
+      <div class="container grid-container w-container">
+        <h2 class="heading h2">service list<br /></h2>
+        <div class="div-block"></div>
+        <div class="service-estimate-text-container w-clearfix">
+          <div class="div-block-4">
+            <img src="images/info.svg" loading="lazy" alt="" />
+          </div>
+          <div class="estimate-text top">
+            View each service&#x27;s &quot;<span class="estimate-text-blue"
+              >Estimate</span
+            >&quot; to get an idea of the typical cost for a 5 bedroom property
+            over the course of a year, and then compare that to the cost of a
+            traditional letting agency at the end of this service list!
+          </div>
+        </div>
+        <div class="w-layout-grid grid-2">
+          <!-- <div class="service-box">
           <h3 class="heading h3 service-title">platform membership</h3>
           <div class="service-price">£6 / month</div>
         </div>
@@ -125,187 +281,358 @@
         <div class="service-box light">
           <h3 class="heading h3 service-title">Property Registration &amp; Landlord Radar advertising</h3>
           <div class="service-price">FREE</div>
+        </div> -->
+          <!-- <div class="service-desc-box light">
+            <div class="service-desc">
+              It’s FREE to register your property and advertise on Landlord
+              Radar. You also get your own listings site which is promoted by
+              email to our tenants and feeds enquiries straight to our sales
+              team.
+            </div>
+          </div> -->
+          <div class="service-box">
+            <h3 class="heading h3 service-title">national advertising</h3>
+            <div class="service-price">
+              5 FREE adverts then £5 / month per property <br />(typically 3
+              months, £15 / year per property)
+            </div>
+          </div>
+          <div class="service-desc-box">
+            <div class="service-desc">
+              Publish your properties to National chains including Zoopla and
+              Gumtree. Take advantage of our rapid sales response to qualify
+              your leads and book viewings. Full sales support including
+              viewings and follow ups at low admin rates.<br /><br /><span
+                class="estimate-text-blue"
+                >Estimate: £15 / year</span
+              >
+            </div>
+          </div>
+          <div class="service-box light">
+            <h3 class="heading h3 service-title">Certificate management</h3>
+            <div class="service-price">Management - FREE</div>
+          </div>
+          <div class="service-desc-box light">
+            <div class="service-desc">
+              We will work with you to ensure that you are fully legally
+              compliant before we advertise your property, and continue to
+              manage your certificate requirements. We can arrange any
+              certificate for you on request.
+            </div>
+          </div>
+          <div class="service-box">
+            <h3 class="heading h3 service-title">Viewings</h3>
+          </div>
+          <div class="service-desc-box">
+            <div class="service-desc">
+              We will manage your viewings for you at our low admin rates using
+              the best local agents available. We can also arrange the viewings
+              that you conduct yourself or with your own staff and make great
+              savings.<br /><br /><span class="estimate-text-blue"
+                >Estimate: £150 / property per year</span
+              >
+            </div>
+          </div>
+          <div class="service-box light">
+            <h3 class="heading h3 service-title">
+              tenant &amp; guarantor sign up
+            </h3>
+            <div class="service-price">
+              £40 / tenant (with guarantor)<br />£25 / tenant (no guarantor)
+              <!-- <br />£20/ tenant (early dropout / credit check fails) -->
+            </div>
+          </div>
+          <div class="service-desc-box light">
+            <div class="service-desc">
+              We qualify and sign up groups with full referencing, guarantors
+              and online signing. Follow progress with our QC reports showing
+              all tenant communications and task completion progress.<br /><br /><span
+                class="estimate-text-blue"
+                >Estimate: £125 - £200 for a 5-bedroom house</span
+              >
+            </div>
+          </div>
+          <div class="service-box">
+            <h3 class="heading h3 service-title">DEPOSIT HANDLING</h3>
+            <div class="service-price">
+              £25 / tenanacy <br />
+              (includes deposit registration and distribution of prescribed
+              information)
+            </div>
+          </div>
+          <div class="service-desc-box">
+            <div class="service-desc">
+              Automatic deposit handling and PI distribution. We collect the
+              deposit, register it with TDS, and distribute the PI for you. Stay
+              compliant with our first rate process.
+            </div>
+          </div>
+          <div class="service-box light">
+            <h3 class="heading h3 service-title">inventory survey</h3>
+            <div class="service-price">
+              From £60 / report<br />DIY - £5 per property with our app
+            </div>
+          </div>
+          <div class="service-desc-box light">
+            <div class="service-desc">
+              Self service with our excellent survey software for just £5 per
+              group, or we can arrange it for you starting at £60 for a standard
+              house.<br /><br /><span class="estimate-text-blue"
+                >Estimate: £60 / year</span
+              >
+            </div>
+          </div>
+          <div class="service-box">
+            <h3 class="heading h3 service-title">House induction <br /></h3>
+            <div class="service-price">£60 / tenancy</div>
+          </div>
+          <div class="service-desc-box">
+            <div class="service-desc">
+              You can do this yourself or we can arrange it for you.<br /><br /><span
+                class="estimate-text-blue"
+                >Estimate: £60 / year</span
+              >
+            </div>
+          </div>
+          <div class="service-box light">
+            <h3 class="heading h3 service-title">MAINTENANCE JOBS</h3>
+            <div class="service-price">
+              Jobs are managed at our low admin rates.
+            </div>
+          </div>
+          <div class="service-desc-box light">
+            <div class="service-desc">
+              Maintenance issues can be handled and passed on by our team using
+              the Landlord Radar platform at our low admin costs. We can also
+              arrange maintenance responses for you to manage the job to
+              completion.<br /><br /><span class="estimate-text-blue"
+                >Estimate: £50 / year</span
+              >
+            </div>
+          </div>
+          <div class="service-box">
+            <h3 class="heading h3 service-title">Fire inspections</h3>
+            <div class="service-price">£30 per inspection & report</div>
+            <div class="service-price">
+              DIY - £5 / property per month with our app
+            </div>
+          </div>
+          <div class="service-desc-box">
+            <div class="service-desc">
+              With our bespoke Fire Radar survey software you save a FORTUNE.
+              Spare the tenants the  intrusion and avoid the expense of
+              professional inspections by using our custom built software
+              solution, Fire Radar. Delegate this monthly to the lead tenant or
+              your own employee for just £5 a month per property.<br /><br /><span
+                class="estimate-text-blue"
+                >Estimate: £60 / year</span
+              >
+            </div>
+          </div>
+          <div class="service-box light">
+            <h3 class="heading h3 service-title">Mid-Term inspections</h3>
+            <div class="service-price">
+              From £40 / inspection &amp; report<br />DIY - £5 / report with our
+              app<br />
+            </div>
+          </div>
+          <div class="service-desc-box light">
+            <div class="service-desc">
+              Use our survey software for just £5 a shot, or we can arrange the
+              MTI for you for £40 with a survey report.<br /><br /><span
+                class="estimate-text-blue"
+                >Estimate: £40 / year</span
+              >
+            </div>
+          </div>
+          <div class="service-box">
+            <h3 class="heading h3 service-title">End of Term Inspections</h3>
+            <div class="service-price">
+              From £60 / inspection &amp; report<br />DIY - £5 / report with our
+              app<br />
+            </div>
+          </div>
+          <div class="service-desc-box">
+            <div class="service-desc">
+              Use our survey software for just £5 a shot, or we can arrange this
+              for you from £60. This produces a comparison report with the
+              incoming inventory and forms a basis for deposit return
+              negotiations.<br /><br /><span class="estimate-text-blue"
+                >Estimate: £60 / year</span
+              >
+            </div>
+          </div>
+          <div class="service-box light">
+            <h3 class="heading h3 service-title">Deposit Return Management</h3>
+            <div class="service-price">
+              Billed hourly at our low admin rate.
+            </div>
+          </div>
+          <div class="service-desc-box light">
+            <div class="service-desc">
+              If you employ us to manage the whole deposit process we will
+              manage the deposit returns. We can process the deposit through
+              each possible tier of simple deposit return, dispute resolution or
+              statutory declaration. We charge all of this at our low admin
+              rates.<br /><br /><span class="estimate-text-blue"
+                >Estimate: £100 / year</span
+              >
+            </div>
+          </div>
+          <div class="service-box">
+            <h3 class="heading h3 service-title">Payment Collection</h3>
+            <div class="service-price">1.25% of the collected amount<br /></div>
+          </div>
+          <div class="service-desc-box">
+            <div class="service-desc">
+              Payment collection (including rent arrears chasing).
+            </div>
+          </div>
         </div>
-        <div class="service-desc-box light">
-          <div class="service-desc">It’s FREE to register your property and advertise on Landlord Radar. You also get your own listings site which is promoted by email to our tenants and feeds enquiries straight to our sales team.</div>
+        <div class="service-estimate-text-container w-clearfix">
+          <div class="div-block-4">
+            <img src="images/star.svg" loading="lazy" alt="" />
+          </div>
+          <div class="estimate-text end">
+            Our estimate for a typical property comes to
+            <span class="estimate-text-blue">£720 / year</span> for a managed
+            service! Compare that to a traditional agency that charges a fixed
+            management fee and likely takes a portion of the first months rent.
+            Traditional letting agencies charge at least
+            <span class="estimate-text-red">£3,000 / year</span> for the same
+            service. That&#x27;s why it makes sense to pay as you go with
+            Landlord Radar!
+          </div>
         </div>
-        <div class="service-box">
-          <h3 class="heading h3 service-title">national advertising</h3>
-          <div class="service-price">£5 / month per property (typically 3 months, £15 per year)</div>
+        <div class="div-block-3">
+          <a
+            href="https://letzbefriends.com/ords/f?p=102:181:::::P181_AGENT:6377480"
+            class="button-full video w-button"
+            id="btn-5-free-3"
+            >Get 5 Free Property Adverts</a
+          >
         </div>
-        <div class="service-desc-box">
-          <div class="service-desc">Publish your properties to National chains including Zoopla and Gumtree. Take advantage of our rapid sales response to qualify your leads and book viewings. Full sales support including viewings and follow ups at low admin rates.<br><br><span class="estimate-text-blue">Estimate: £15 / year</span></div>
-        </div>
-        <div class="service-box light">
-          <h3 class="heading h3 service-title">Certificate management</h3>
-          <div class="service-price">Management - FREE</div>
-        </div>
-        <div class="service-desc-box light">
-          <div class="service-desc">We will work with you to ensure that you are fully legally compliant before we advertise your property, and continue to manage your certificate requirements. We can arrange any certificate for you on request.</div>
-        </div>
-        <div class="service-box">
-          <h3 class="heading h3 service-title">Viewings</h3>
-        </div>
-        <div class="service-desc-box">
-          <div class="service-desc">We will manage your viewings for you at our low admin rates using the best local agents available. We can also arrange the viewings that you conduct yourself or with your own staff and make great savings.<br><br><span class="estimate-text-blue">Estimate: £150 / property per year</span></div>
-        </div>
-        <div class="service-box light">
-          <h3 class="heading h3 service-title">tenant &amp; guarantor sign up</h3>
-          <div class="service-price">£40 / tenant (with guarantor)<br>£25 / tenant (no guarantor)<br>£20 / tenant (early dropout / credit check fails)</div>
-        </div>
-        <div class="service-desc-box light">
-          <div class="service-desc">We qualify and sign up groups with full referencing, guarantors and online signing. Follow progress with our QC reports showing all tenant communications and task completion progress.<br><br><span class="estimate-text-blue">Estimate: £125 - £200 for a 5-bedroom house</span></div>
-        </div>
-        <div class="service-box">
-          <h3 class="heading h3 service-title">DEPOSIT HANDLING</h3>
-          <div class="service-price">FREE</div>
-        </div>
-        <div class="service-desc-box">
-          <div class="service-desc">Automatic deposit handling and PI distribution. We collect the deposit, register it with TDS, and distribute the PI for you. Stay compliant with our first rate process.</div>
-        </div>
-        <div class="service-box light">
-          <h3 class="heading h3 service-title">inventory survey</h3>
-          <div class="service-price">From £60 / report<br>DIY - £5 per property with our app</div>
-        </div>
-        <div class="service-desc-box light">
-          <div class="service-desc">Self service with our excellent survey software for just £5 per group, or we can arrange it for you starting at £60 for a standard house.<br><br><span class="estimate-text-blue">Estimate: £60 / year</span></div>
-        </div>
-        <div class="service-box">
-          <h3 class="heading h3 service-title">House induction &amp; key distribution<br></h3>
-          <div class="service-price">£60 / property per year</div>
-        </div>
-        <div class="service-desc-box">
-          <div class="service-desc">You can do this yourself or we can arrange it for you.<br><br><span class="estimate-text-blue">Estimate: £60 / year</span></div>
-        </div>
-        <div class="service-box light">
-          <h3 class="heading h3 service-title">MAINTENANCE JOBS</h3>
-          <div class="service-price">Jobs are managed at our low admin rates.</div>
-        </div>
-        <div class="service-desc-box light">
-          <div class="service-desc">Maintenance issues can be handled and passed on by our team using the Landlord Radar platform at our low admin costs. We can also arrange maintenance responses for you to manage the job to completion.<br><br><span class="estimate-text-blue">Estimate: £50 / year</span></div>
-        </div>
-        <div class="service-box">
-          <h3 class="heading h3 service-title">Fire inspections</h3>
-          <div class="service-price">£30 per inspection & report</div>
-          <div class="service-price">DIY - £5 / property per month with our app</div>
-        </div>
-        <div class="service-desc-box">
-          <div class="service-desc">With our bespoke Fire Radar survey software you save a FORTUNE. Spare the tenants the  intrusion and avoid the expense of professional inspections by using our custom built software solution, Fire Radar. Delegate this monthly to the lead tenant or your own employee for just £5 a month per property.<br><br><span class="estimate-text-blue">Estimate: £60 / year</span></div>
-        </div>
-        <div class="service-box light">
-          <h3 class="heading h3 service-title">Mid-Term inspections</h3>
-          <div class="service-price">From £40 / inspection &amp; report<br>DIY - £5 / report with our app<br></div>
-        </div>
-        <div class="service-desc-box light">
-          <div class="service-desc">Use our survey software for just £5 a shot, or we can arrange the MTI for you for £40 with a survey report.<br><br><span class="estimate-text-blue">Estimate: £40 / year</span></div>
-        </div>
-        <div class="service-box">
-          <h3 class="heading h3 service-title">End of Term Inspections</h3>
-          <div class="service-price">From £60 / inspection &amp; report<br>DIY - £5 / report with our app<br></div>
-        </div>
-        <div class="service-desc-box">
-          <div class="service-desc">Use our survey software for just £5 a shot, or we can arrange this for you from £60. This produces a comparison report with the incoming inventory and forms a basis for deposit return negotiations.<br><br><span class="estimate-text-blue">Estimate: £60 / year</span></div>
-        </div>
-        <div class="service-box light">
-          <h3 class="heading h3 service-title">Deposit Return Management</h3>
-          <div class="service-price">Billed hourly at our low admin rate.</div>
-        </div>
-        <div class="service-desc-box light">
-          <div class="service-desc">If you employ us to manage the whole deposit process we will manage the deposit returns. We can process the deposit through each possible tier of simple deposit return, dispute resolution or statutory declaration. We charge all of this at our low admin rates.<br><br><span class="estimate-text-blue">Estimate: £100 / year</span></div>
-        </div>
-        <div class="service-box">
-          <h3 class="heading h3 service-title">Payment Collection</h3>
-          <div class="service-price">1.25% of the collected amount<br></div>
-        </div>
-        <div class="service-desc-box">
-          <div class="service-desc">Payment collection (including rent arrears chasing).</div>
-        </div>
-      </div>
-      <div class="service-estimate-text-container w-clearfix">
-        <div class="div-block-4"><img src="images/star.svg" loading="lazy" alt=""></div>
-        <div class="estimate-text end">Our estimate for a typical property comes to <span class="estimate-text-blue">£720 / year</span> for a managed service! Compare that to a traditional agency that charges a fixed management fee and likely takes a portion of the first months rent. Traditional letting agencies charge at least <span class="estimate-text-red">£3,000 / year</span> for the same service. That&#x27;s why it makes sense to pay as you go with Landlord Radar!</div>
-      </div>
-      <div class="div-block-3">
-        <a href="https://letzbefriends.com/ords/f?p=102:181:::::P181_AGENT:6377480" class="button-full video w-button" id="btn-5-free-3">Get 5 Free Property Adverts</a>
       </div>
     </div>
-  </div>
 
-  <script>
-    $("#btn-top-sign-up").click(function() {
-      fbq('track', 'InitiateCheckout');
-    });
+    <script>
+      $("#btn-top-sign-up").click(function () {
+        fbq("track", "InitiateCheckout");
+      });
 
-    $("#btn-5-free-1").click(function() {
-      fbq('track', 'InitiateCheckout');
-    });
+      $("#btn-5-free-1").click(function () {
+        fbq("track", "InitiateCheckout");
+      });
 
-    $("#btn-5-free-2").click(function() {
-      fbq('track', 'InitiateCheckout');
-    });
+      $("#btn-5-free-2").click(function () {
+        fbq("track", "InitiateCheckout");
+      });
 
-    $("#btn-5-free-3").click(function() {
-      fbq('track', 'InitiateCheckout');
-    });
-  </script>
+      $("#btn-5-free-3").click(function () {
+        fbq("track", "InitiateCheckout");
+      });
+    </script>
 
-  <div id="contact" class="contact-section">
-    <div class="container w-container">
-      <h2 class="heading h2">contact us<br></h2>
-      <div class="div-block"></div>
-      <div class="w-row">
-        <div class="column w-col w-col-6 w-col-stack">
-          <div class="div-block-2"></div>
-        </div>
-        <div class="column-2 w-col w-col-6 w-col-stack">
-          <div class="div-block-5">
-            <div class="div-block-6">
-              <div class="div-block-7 w-clearfix">
-                <div class="contact-icon-container"><img src="images/telephone.svg" loading="lazy" alt=""></div>
-                <div class="heading h2 contact">01926 940960</div>
-              </div>
-              <div class="div-block-7 w-clearfix">
-                <div class="contact-icon-container"><img src="images/envelope.svg" loading="lazy" alt=""></div>
-                <div class="heading h2 contact email">admin@landlordradar.co.uk</div>
-              </div>
-              <div class="div-block-7 w-clearfix">
-                <div class="contact-icon-container"><img src="images/hotel.svg" loading="lazy" alt=""></div>
-                <div class="heading h2 contact">102 Spon End,<br>Coventry CV1 3HF</div>
+    <div id="contact" class="contact-section">
+      <div class="container w-container">
+        <h2 class="heading h2">contact us<br /></h2>
+        <div class="div-block"></div>
+        <div class="w-row">
+          <div class="column w-col w-col-6 w-col-stack">
+            <div class="div-block-2"></div>
+          </div>
+          <div class="column-2 w-col w-col-6 w-col-stack">
+            <div class="div-block-5">
+              <div class="div-block-6">
+                <div class="div-block-7 w-clearfix">
+                  <div class="contact-icon-container">
+                    <img src="images/telephone.svg" loading="lazy" alt="" />
+                  </div>
+                  <div class="heading h2 contact">01926 940960</div>
+                </div>
+                <div class="div-block-7 w-clearfix">
+                  <div class="contact-icon-container">
+                    <img src="images/envelope.svg" loading="lazy" alt="" />
+                  </div>
+                  <div class="heading h2 contact email">
+                    admin@landlordradar.co.uk
+                  </div>
+                </div>
+                <div class="div-block-7 w-clearfix">
+                  <div class="contact-icon-container">
+                    <img src="images/hotel.svg" loading="lazy" alt="" />
+                  </div>
+                  <div class="heading h2 contact">
+                    102 Spon End,<br />Coventry CV1 3HF
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer">
-    <div class="container footer w-container">
-      <div class="w-row">
-        <div class="w-col w-col-6">
-          <div class="div-block-8">
-            <a href="#home" class="footer-link">Home</a>
-            <a href="#features" class="footer-link">Property Management</a>
-            <a href="#video" class="footer-link">Promotional Video</a>
-            <a href="#services" class="footer-link">Services</a>
+    <div class="footer">
+      <div class="container footer w-container">
+        <div class="w-row">
+          <div class="w-col w-col-6">
+            <div class="div-block-8">
+              <a href="#home" class="footer-link">Home</a>
+              <a href="#features" class="footer-link">Property Management</a>
+              <a href="#video" class="footer-link">Promotional Video</a>
+              <a href="#services" class="footer-link">Services</a>
+            </div>
+          </div>
+          <div class="w-col w-col-6">
+            <div class="div-block-9">
+              <a
+                href="https://www.youtube.com/channel/UCoAQXKgtzqgR-nRA_uAQNPg"
+                target="_blank"
+                class="link-block w-inline-block"
+                ><img
+                  src="images/youtube-1.svg"
+                  loading="lazy"
+                  alt=""
+                  class="image-4"
+              /></a>
+              <a
+                href="https://apps.apple.com/au/app/llrmsg/id1544701866"
+                target="_blank"
+                class="link-block w-inline-block"
+                ><img
+                  src="images/apple.svg"
+                  loading="lazy"
+                  alt=""
+                  class="image-5"
+              /></a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.letzbefriends.llrmsgapp"
+                target="_blank"
+                class="link-block w-inline-block"
+                ><img
+                  src="images/android-logo.svg"
+                  loading="lazy"
+                  alt=""
+                  class="image-4"
+              /></a>
+            </div>
           </div>
         </div>
-        <div class="w-col w-col-6">
-          <div class="div-block-9">
-            <a href="https://www.youtube.com/channel/UCoAQXKgtzqgR-nRA_uAQNPg" target="_blank" class="link-block w-inline-block"><img src="images/youtube-1.svg" loading="lazy" alt="" class="image-4"></a>
-            <a href="https://apps.apple.com/au/app/llrmsg/id1544701866" target="_blank" class="link-block w-inline-block"><img src="images/apple.svg" loading="lazy" alt="" class="image-5"></a>
-            <a href="https://play.google.com/store/apps/details?id=com.letzbefriends.llrmsgapp" target="_blank" class="link-block w-inline-block"><img src="images/android-logo.svg" loading="lazy" alt="" class="image-4"></a>
+        <div class="div-block-11">
+          <div class="text-block">
+            Copyright © 2021 by LetzBeFriends Ltd. All rights reserved.
           </div>
         </div>
-      </div>
-      <div class="div-block-11">
-        <div class="text-block">Copyright © 2021 by LetzBeFriends Ltd. All rights reserved.</div>
       </div>
     </div>
-  </div>
 
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60b6339e628ab5296f5a18d8" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-</body>
-
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60b6339e628ab5296f5a18d8"
+      type="text/javascript"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/webflow.js" type="text/javascript"></script>
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  </body>
 </html>
