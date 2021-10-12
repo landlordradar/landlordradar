@@ -96,28 +96,29 @@
     <div id="fb-root"></div>
 
     <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
+      var chatbox = document.getElementById("fb-customer-chat");
       chatbox.setAttribute("page_id", "263193418870235");
       chatbox.setAttribute("attribution", "biz_inbox");
 
-      window.fbAsyncInit = function() {
+      window.fbAsyncInit = function () {
         FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
+          xfbml: true,
+          version: "v12.0",
         });
       };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js";
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      })(document, "script", "facebook-jssdk");
     </script>
     <div
       data-collapse="medium"
@@ -176,11 +177,18 @@
       </div>
     </div>
     <div id="features" class="features-section">
-      <div class="container w-container" style="padding-bottom: 100px !important;">
-        <div style="text-align: center;">
-        <img src="https://landlordradar.com/images/telephone.svg" width=5%>&nbsp;01926 940960&nbsp;
-        <img src="https://landlordradar.com/images/envelope.svg" width=5%>&nbsp;admin@landlordradar.co.uk
+      <div class="container w-container">
+        <div class="contact-div" style="text-align: center">
+          <img
+            src="https://landlordradar.com/images/telephone.svg"
+            width="5%"
+          />&nbsp;<strong>01926 940960</strong>&nbsp;
+          <img
+            src="https://landlordradar.com/images/envelope.svg"
+            width="5%"
+          />&nbsp;<strong>admin@landlordradar.co.uk</strong>
         </div>
+
         <h2 class="heading h2">pay-as-you-go property management<br /></h2>
         <div class="div-block"></div>
         <p class="paragraph long-copy">
@@ -650,6 +658,5 @@
     ></script>
     <script src="js/webflow.js" type="text/javascript"></script>
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-    
   </body>
 </html>

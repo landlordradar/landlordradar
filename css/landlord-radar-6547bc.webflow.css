@@ -24,7 +24,7 @@
   right: 0%;
   bottom: auto;
   height: 70vh;
-  background-image: url('../images/sebastien-jermer-27003-unsplash-1.jpeg');
+  background-image: url("../images/sebastien-jermer-27003-unsplash-1.jpeg");
   background-position: 50% 40%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 }
 
 .brand {
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 0px 0px;
   background-size: auto;
 }
@@ -276,7 +276,8 @@
   margin-bottom: 40px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto auto
+    auto auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
   border-style: solid;
   border-width: 1px;
@@ -336,7 +337,7 @@
   margin-right: auto;
   margin-left: auto;
   border-radius: 5px;
-  background-image: url('../images/abbey-501839_640-min.jpg');
+  background-image: url("../images/abbey-501839_640-min.jpg");
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -858,4 +859,8 @@
     -ms-flex-align: center;
     align-items: center;
   }
+}
+
+.contact-div {
+  padding-bottom: 50px;
 }
