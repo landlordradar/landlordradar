@@ -120,6 +120,7 @@
         fjs.parentNode.insertBefore(js, fjs);
       })(document, "script", "facebook-jssdk");
     </script>
+
     <div
       data-collapse="medium"
       data-animation="default"
@@ -158,6 +159,37 @@
           <div class="w-icon-nav-menu"></div>
         </div>
       </div>
+
+      <!-- *** FIXED NAV BAR *** -->
+      <div class="sticky-nav">
+        <div class="contact-icon-container-nav phone">
+          <img src="images/telephone.svg" loading="lazy" alt="" />
+        </div>
+        <p class="fixed-nav-text phone">
+          <a href="tel:01926 940960">01926 940960</a>
+        </p>
+        <div class="logo-container-nav">
+          <img src="images/Landlord-Radar-Logo2-1024x123-p-800.png" alt="" />
+        </div>
+        <div class="contact-icon-container-nav">
+          <img src="images/envelope.svg" loading="lazy" alt="" />
+        </div>
+        <p class="fixed-nav-text">
+          <a href="mailto:admin@landlordradar.co.uk"
+            >admin@landlordradar.co.uk</a
+          >
+        </p>
+      </div>
+      <script>
+        $(document).scroll(function () {
+          var y = $(this).scrollTop();
+          if (y > 70) {
+            $(".sticky-nav").fadeIn();
+          } else {
+            $(".sticky-nav").fadeOut();
+          }
+        });
+      </script>
     </div>
 
     <div id="home" class="hero-section">
