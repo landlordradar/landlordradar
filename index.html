@@ -92,35 +92,6 @@
   </head>
 
   <body class="body">
-    <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
-
-    <script>
-      var chatbox = document.getElementById("fb-customer-chat");
-      chatbox.setAttribute("page_id", "263193418870235");
-      chatbox.setAttribute("attribution", "biz_inbox");
-
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v12.0",
-        });
-      };
-
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-
     <div
       data-collapse="medium"
       data-animation="default"
@@ -208,6 +179,18 @@
         </div>
       </div>
     </div>
+
+    <div id="btn-chat" class="btn-chat" onclick="openChat()">Chat</div>
+    <script>
+      function openChat() {
+        window.open(
+          "https://letzbefriends.com/ords/f?p=106:4",
+          "LandlordRADAR Customer Support",
+          "height=667,width=375"
+        );
+      }
+    </script>
+
     <div id="features" class="features-section">
       <div class="container w-container">
         <div class="contact-div" style="text-align: center">
@@ -282,7 +265,8 @@
               <h3 class="heading h3">maintenance management</h3>
               <p class="paragraph features-p">
                 Manage maintenance requests on our collaborative software
-                platform, or we can manage them for you at our low admin rates of £15 / hour.
+                platform, or we can manage them for you at our low admin rates
+                of £15 / hour.
               </p>
             </div>
           </div>
@@ -382,10 +366,10 @@
           </div>
           <div class="service-desc-box">
             <div class="service-desc">
-              We will manage your viewings for you at our low admin rates of £15 / hour using
-              the best local agents available. We can also arrange the viewings
-              that you conduct yourself or with your own staff and make great
-              savings.<br /><br /><span class="estimate-text-blue"
+              We will manage your viewings for you at our low admin rates of £15
+              / hour using the best local agents available. We can also arrange
+              the viewings that you conduct yourself or with your own staff and
+              make great savings.<br /><br /><span class="estimate-text-blue"
                 >Estimate: £150 / property per year</span
               >
             </div>
