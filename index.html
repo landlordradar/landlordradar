@@ -291,6 +291,21 @@
         </div>
       </div>
     </div>
+
+    <div id="video" class="video-section team" id="team">
+      <div class="container video w-container">
+        <h2 class="heading h2">meet the team<br /></h2>
+        <div class="div-block"></div>
+        <img name="slide" width="400" height="auto" class="img-team" />
+        <a
+          href="mailto: admin@landlordradar.co.uk"
+          class="button-full video w-button"
+          id="join-the-team"
+          >Join The Team</a
+        >
+      </div>
+    </div>
+
     <div id="video" class="video-section">
       <div class="container video w-container">
         <h2 class="heading h2">join the movement<br /></h2>
@@ -314,6 +329,41 @@
         >
       </div>
     </div>
+
+    <script>
+      var i = 0; //Start point
+      var images = [];
+      var time = 2500;
+
+      //Image list
+      images[0] = "images/subagents/image1.png";
+      images[1] = "images/subagents/image2.png";
+      images[2] = "images/subagents/image3.png";
+      images[3] = "images/subagents/image4.png";
+      images[4] = "images/subagents/image5.png";
+      images[5] = "images/subagents/image6.png";
+      images[6] = "images/subagents/image7.png";
+      images[7] = "images/subagents/image8.png";
+      images[8] = "images/subagents/image9.png";
+      images[9] = "images/subagents/image10.png";
+
+      //Change image
+
+      function changeImg() {
+        document.slide.src = images[i];
+
+        if (i < images.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+
+        setTimeout("changeImg()", time);
+      }
+
+      window.onload = changeImg();
+    </script>
+
     <div id="services" class="service-list-section">
       <div class="container grid-container w-container">
         <h2 class="heading h2">service list<br /></h2>

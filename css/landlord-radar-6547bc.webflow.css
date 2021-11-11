@@ -190,6 +190,7 @@
 .features-section {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: #f4f4f4;
 }
 
 .container {
@@ -257,6 +258,10 @@
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #f4f4f4;
+}
+
+.video-section.team {
+  background-color: #fff;
 }
 
 .html-embed {
@@ -937,4 +942,16 @@
     width: 200px;
     display: none;
   }
+}
+
+/* Team Section */
+
+.img-team {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#join-the-team {
+  margin-top: 40px;
 }
