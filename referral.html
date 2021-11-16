@@ -283,18 +283,26 @@
                     const lname = document.getElementById("name-2").value;
                     const email = document.getElementById("email-2").value;
                     const phone = document.getElementById("phone").value;
+                    const promocode = document.getElementById("promo").value;
                     const url =
-                      "https://letzbefriends.com/ords/lez/llr/llrlead?";
+                      "https://letzbefriends.com/ords/lez/llrmsg/llreg?";
                     var url_full =
                       url +
-                      "fname=" +
+                      "firstname=" +
                       fname +
-                      "&lname=" +
-                      lname +
-                      "&tel=" +
+                      "&telephone=" +
                       phone +
-                      "&em=" +
-                      email;
+                      "&lastname=" +
+                      lname +
+                      "&email=" +
+                      email +
+                      "&tradingname=" +
+                      fname +
+                      " " +
+                      lname +
+                      "&promocode=" +
+                      promocode;
+                    console.log(url_full);
                     var xmlHttp = new XMLHttpRequest();
                     console.log(url_full);
                     xmlHttp.open("GET", url_full, true);
